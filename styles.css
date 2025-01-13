@@ -1,0 +1,127 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(245, 245, 245);
+  color: rgb(32, 32, 32);
+}
+
+/* Header Styles */
+.header_dark_gray {
+  padding: 30px;
+  background-color: rgb(100,100,100);
+  color: rgb(245, 245, 245);
+  margin-bottom: 20px;
+}
+
+.header_dark_gray h1 {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
+.header_light_gray {
+  color: rgb(26, 26, 26);
+  padding: 20px;
+  background-color: rgb(220, 220, 220);
+  margin-top: 30px;
+}
+
+.header_light_gray h2 {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+}
+
+/* Content Styles */
+.content1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-container {
+  width: calc(25% - 20px);
+  min-width: 256px;
+  margin-bottom: 20px;
+}
+
+.video-container figure {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 0;
+  padding: 10px;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.video-container figcaption {
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.video-container figcaption p {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+  .video-container {
+    width: calc(33.333% - 20px);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .video-container {
+    width: calc(50% - 20px);
+  }
+  
+  .header_dark_gray h1 {
+    font-size: 1.5em;
+  }
+  
+  .header_light_gray h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .video-container {
+    width: 100%;
+  }
+  
+  .content1 {
+    padding: 10px;
+  }
+}
+
+.back-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 20px;
+    transition: all 0.3s ease;
+    font-family: 'Google Sans', sans-serif;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(-4px);
+}
+
+
