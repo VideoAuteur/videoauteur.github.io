@@ -259,16 +259,16 @@
     <div class="content1">
       <div class="video-wrapper">
         <div class="carousel-container">
-          <button class="nav-button prev-button" onclick="changeVideo(-1)">
+          <button class="nav-button prev-button" onclick="changeExtensionVideo(-1)">
             <i class="fas fa-chevron-left"></i>
           </button>
           
           <div class="video-slide">
-            <video id="demo-video" controls>
+            <video id="extension-video" controls>
               <source src="Extension/tesla_AD.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-            <div id="demo-caption" class="video-caption">
+            <div id="extension-caption" class="video-caption">
               <p class="caption-line">
                 <span class="video-title">Tesla Car Product Video</span>
                 <a href="https://www.youtube.com/watch?v=sV5MwVYQwS8" class="reference-link">Reference: https://www.youtube.com/watch?v=sV5MwVYQwS8</a>
@@ -277,7 +277,7 @@
             </div>
           </div>
 
-          <button class="nav-button next-button" onclick="changeVideo(1)">
+          <button class="nav-button next-button" onclick="changeExtensionVideo(1)">
             <i class="fas fa-chevron-right"></i>
           </button>
         </div>
@@ -1138,6 +1138,27 @@
             <span class="video-title">${videos[currentVideoIndex].title}</span>
             <a href="${videos[currentVideoIndex].reference}" class="reference-link">Reference: ${videos[currentVideoIndex].reference}</a><br>
             ${videos[currentVideoIndex].description}
+          </p>
+        `;
+      }
+
+      let extensionVideoIndex = 0;
+
+      function changeExtensionVideo(direction) {
+        extensionVideoIndex = (extensionVideoIndex + direction + videos.length) % videos.length;
+        const video = document.getElementById('extension-video');
+        const caption = document.getElementById('extension-caption');
+        
+        // Update video source
+        video.src = videos[extensionVideoIndex].src;
+        video.load();
+        
+        // Update caption
+        caption.innerHTML = `
+          <p class="caption-line">
+            <span class="video-title">${videos[extensionVideoIndex].title}</span>
+            <a href="${videos[extensionVideoIndex].reference}" class="reference-link">Reference: ${videos[extensionVideoIndex].reference}</a><br>
+            ${videos[extensionVideoIndex].description}
           </p>
         `;
       }
