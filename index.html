@@ -173,8 +173,7 @@
                   <div id="demo-caption" class="video-caption">
                     <p class="caption-line">
                       <span class="video-title">Tesla Car Product Video</span>
-                      <a href="https://www.youtube.com/watch?v=sV5MwVYQwS8" class="reference-link">Reference: https://www.youtube.com/watch?v=sV5MwVYQwS8</a>
-                      <span class="description">Inspired by BMW commercials, this AI-generated advertisement demonstrates our model's ability to analyze reference content and create original narratives. The entire process—from storyline development to keyframe generation and video clips—is AI-powered. The final video is enhanced using CapCut for dynamic pacing, with some sequences sped up or shortened for engagement. Only the audio and final logo clip are manually added, with basic editing taking approximately 30 minutes.</span>
+                      <span class="description">This AI-generated advertisement demonstrates our model's ability to create original automotive narratives. The entire process—from storyline development to keyframe generation and video clips—is AI-powered. The final video is enhanced using CapCut for dynamic pacing, with some sequences sped up or shortened for engagement. Only the audio and final logo clip are manually added, with basic editing taking approximately 30 minutes.</span>
                     </p>
                   </div>
                 </div>
@@ -271,8 +270,7 @@
             <div id="extension-caption" class="video-caption">
               <p class="caption-line">
                 <span class="video-title">Tesla Car Product Video</span>
-                <a href="https://www.youtube.com/watch?v=sV5MwVYQwS8" class="reference-link">Reference: https://www.youtube.com/watch?v=sV5MwVYQwS8</a>
-                <span class="description">Inspired by BMW commercials, this AI-generated advertisement demonstrates our model's ability to analyze reference content and create original narratives. The entire process—from storyline development to keyframe generation and video clips—is AI-powered. The final video is enhanced using CapCut for dynamic pacing, with some sequences sped up or shortened for engagement. Only the audio and final logo clip are manually added, with basic editing taking approximately 30 minutes.</span>
+                <span class="description">This AI-generated advertisement demonstrates our model's ability to create original automotive narratives. The entire process—from storyline development to keyframe generation and video clips—is AI-powered. The final video is enhanced using CapCut for dynamic pacing, with some sequences sped up or shortened for engagement. Only the audio and final logo clip are manually added, with basic editing taking approximately 30 minutes.</span>
               </p>
             </div>
           </div>
@@ -1104,14 +1102,12 @@
         {
           src: "Extension/tesla_AD.mp4",
           title: "Tesla Car Product Video",
-          reference: "https://www.youtube.com/watch?v=sV5MwVYQwS8",
-          description: "Inspired by BMW commercials, this AI-generated advertisement demonstrates our model's ability to analyze reference content and create original narratives. The entire process—from storyline development to keyframe generation and video clips—is AI-powered. The final video is enhanced using CapCut for dynamic pacing, with some sequences sped up or shortened for engagement. Only the audio and final logo clip are manually added, with basic editing taking approximately 30 minutes."
+          description: "This AI-generated advertisement demonstrates our model's ability to create original automotive narratives. The entire process—from storyline development to keyframe generation and video clips—is AI-powered. The final video is enhanced using CapCut for dynamic pacing, with some sequences sped up or shortened for engagement. Only the audio and final logo clip are manually added, with basic editing taking approximately 30 minutes."
         },
         {
           src: "Extension/animal_v2.mp4",
           title: "Animal Documentary Trailer",
-          reference: "https://www.youtube.com/watch?v=YqcOaxJCZr8",
-          description: "This demo showcases our model's ability to generate nature documentary-style content inspired by the reference animal videos. The AI system generates diverse wildlife scenes with natural behaviors and environments, demonstrating potential for educational and entertainment content creation. We curate the best-generated clips that show realistic animal movements and environmental interactions to construct a compelling narrative. The final video is enhanced using CapCut for professional pacing and transitions. Only the background music and narration are manually added, with basic editing taking approximately 45 minutes."
+          description: "This demo showcases our model's ability to generate nature documentary-style content. The AI system generates diverse wildlife scenes with natural behaviors and environments, demonstrating potential for educational and entertainment content creation. We curate the best-generated clips that show realistic animal movements and environmental interactions to construct a compelling narrative. The final video is enhanced using CapCut for professional pacing and transitions. Only the background music and narration are manually added, with basic editing taking approximately 45 minutes."
         }
       ];
 
@@ -1130,7 +1126,6 @@
         caption.innerHTML = `
           <p class="caption-line">
             <span class="video-title">${videos[currentVideoIndex].title}</span>
-            <a href="${videos[currentVideoIndex].reference}" class="reference-link">Reference: ${videos[currentVideoIndex].reference}</a><br>
             ${videos[currentVideoIndex].description}
           </p>
         `;
@@ -1151,7 +1146,6 @@
         caption.innerHTML = `
           <p class="caption-line">
             <span class="video-title">${videos[extensionVideoIndex].title}</span>
-            <a href="${videos[extensionVideoIndex].reference}" class="reference-link">Reference: ${videos[extensionVideoIndex].reference}</a><br>
             ${videos[extensionVideoIndex].description}
           </p>
         `;
